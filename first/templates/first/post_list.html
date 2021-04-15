@@ -1,0 +1,4 @@
+{% extends 'first/base.html' %}
+{% block content %}
+  <a href="{% url 'post-detail' pk=post.pk %}">Comments: {{ post.approved_comments.count }}</a>
+{% endblock %}
